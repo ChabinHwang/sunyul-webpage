@@ -1423,9 +1423,11 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
+			/* 브레이크 태그가 작동하도록 주석 처리 
 			#header .content p br {
 				display: none;
 			}
+			*/
 
 		}
 
@@ -1659,3 +1661,28 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/* 로고 이미지 반응형 스타일 */
+.logo-image {
+    width: 80px;
+    height: auto;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 736px) {
+    .logo-image {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-image {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .logo-image {
+        width: 50px;
+    }
+}
